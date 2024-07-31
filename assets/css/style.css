@@ -12,3 +12,212 @@ body {
 a {
     text-decoration: none;
 }
+.container {
+    margin: 0 auto;
+    width: 1140px;
+    max-width: calc(100% - 48px);
+}
+.btn {
+    display: inline-block;
+    min-width: 173px;
+    --height: 57px;
+    height: var(--height);
+    border-radius: 40px;
+    border: 1.5px solid #143c3c;
+    background: var(--Primary-color-black-green, #143c3c);
+    color: var(--text-color-white, #fff);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: var(--height);
+}
+.btn:hover {
+    opacity: 0.9;
+}
+/* Header */
+.header {
+    min-height: 100vh;
+    padding-top: 30px;
+    font-family: "Public Sans", sans-serif;
+}
+.header-top {
+    position: relative;
+    padding-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-top::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: inline-block;
+    width: 1140px;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #fff 0%,
+        #dddcdc 51.09%,
+        rgba(212, 212, 212, 0) 99.68%
+    );
+}
+.navbar {
+    margin-left: auto;
+    margin-right: 88px;
+}
+.navbar__list {
+    display: flex;
+    align-items: center;
+}
+.navbar__link {
+    padding: 4px 19px;
+    color: var(--text-color-black-gray, #575d5e);
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.56;
+}
+.navbar__link:hover,
+.navbar__link-active {
+    text-shadow: 1px 0 0 currentColor;
+}
+.navbar__link-active {
+    position: relative;
+}
+.navbar__link-active::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 2px;
+    bottom: -25px;
+    left: 19px;
+    background: var(--Primary-color-black-green, #143c3c);
+}
+.hero {
+    display: flex;
+    margin-top: 60px;
+}
+.hero__content {
+    margin-top: 43px;
+    width: 43%;
+}
+.hero__heading {
+    max-width: 368px;
+    color: var(--Primary-color-black, #152427);
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+.hero__desc {
+    max-width: 341px;
+    margin-top: 20px;
+    color: var(--text-color-black-gray, #575d5e);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.56;
+}
+.hero__row {
+    margin-top: 42px;
+    display: flex;
+    column-gap: 36px;
+    align-items: center;
+}
+.hero__video {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+.hero__video-play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 57px;
+    height: 57px;
+    background: transparent;
+    border-radius: 50%;
+    border: 4px solid;
+    border-color: #143c3c transparent transparent #143c3c;
+    rotate: -45deg;
+    transition: 0.5s;
+}
+.hero__video-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    color: #fff;
+    border-radius: 50%;
+    background: #83a17d;
+    rotate: 45deg;
+}
+.hero__video:hover .hero__video-play {
+    cursor: pointer;
+    border-color: #143c3c;
+    rotate: 310deg;
+}
+.hero__video:hover .hero__video-circle {
+    rotate: -310deg;
+    background: #143c3c;
+}
+.hero__video-text {
+    color: #152427;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.67;
+}
+.hero__video:hover {
+    cursor: pointer;
+}
+.hero__media {
+    position: relative;
+}
+.hero__img-blur {
+    position: absolute;
+    left: 156px;
+    bottom: 81px;
+    width: 340px;
+    height: 340px;
+    border-radius: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+    z-index: -1;
+}
+.hero__images {
+    display: flex;
+    column-gap: 20px;
+}
+.hero__img {
+    width: 202px;
+    height: 466px;
+    border-radius: 110px;
+    object-fit: cover;
+}
+.hero__img:nth-child(2) {
+    margin-top: 77px;
+}
+.hero__icon-1,
+.hero__icon-2,
+.hero__icon-3,
+.hero__icon-4 {
+    position: absolute;
+}
+.hero__icon-1 {
+    top: -29px;
+    left: -216px;
+}
+.hero__icon-2 {
+    top: -30px;
+    left: -170px;
+}
+.hero__icon-3 {
+    bottom: -70px;
+    right: 50px;
+}
+.hero__icon-4 {
+    bottom: -40px;
+    right: 10px;
+}
