@@ -103,7 +103,7 @@ a {
 /* Header */
 .header-fixed {
     position: sticky;
-    top: -30px;
+    top: -15px;
     z-index: 1;
 }
 .header {
@@ -672,7 +672,7 @@ a {
     font-weight: 500;
     line-height: 1.56;
 }
-.project__link-icon:hover {
+.project__link svg:hover {
     cursor: pointer;
 }
 .project__media {
@@ -856,6 +856,9 @@ a {
 .blog-item:hover .blog-item__heading {
     padding-bottom: 9px;
 }
+.blog-item:last-child:hover .blog-item__heading {
+    padding-bottom: 38px;
+}
 /* Footer */
 .footer {
     margin-top: 102px;
@@ -878,7 +881,6 @@ a {
 }
 .footer-form {
     display: flex;
-    align-items: center;
     margin-top: 25px;
 }
 .footer-form__input {
@@ -902,7 +904,7 @@ a {
 .footer-form__icon {
     margin-top: 22px;
     border-bottom: 1px solid #6a8383;
-    padding-bottom: 20px;
+    padding-bottom: 18px;
 }
 .footer__social {
     display: flex;
